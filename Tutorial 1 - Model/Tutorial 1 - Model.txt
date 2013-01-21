@@ -1,0 +1,17 @@
+Blog model taken from
+http://code.google.com/p/elephas/
+
+See: http://isis.apache.org/getting-started/quickstart-archetype.html
+
+mvn archetype:generate  \
+    -D archetypeGroupId=org.apache.isis.archetype \
+    -D archetypeArtifactId=quickstart_wicket_restful_jdo-archetype \
+    -D archetypeVersion=1.0.1 \
+    -D groupId=org.apache.isis.tutorial \
+    -D artifactId=bragger
+
+> Couple of <Enter>'s
+
+cd bragger
+
+mvn clean install    
