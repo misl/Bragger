@@ -41,7 +41,7 @@ public class Users extends AbstractFactoryAndRepository {
 
     // {{ newUser (action)
     public User newUser(@Named("Firstname") String firstName, @Named("Lastname") String lastName, @Named("E-mail") String email, @Named("Password") String password) {
-        final User user = newPersistentInstance(User.class);
+        final User user = newTransientInstance(User.class);
         user.setFirstName(firstName);
         user.setLastName(lastName);
         user.setEmail(email);

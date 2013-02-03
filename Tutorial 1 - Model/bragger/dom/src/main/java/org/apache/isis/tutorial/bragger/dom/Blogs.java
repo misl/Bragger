@@ -41,7 +41,7 @@ public class Blogs extends AbstractFactoryAndRepository {
 
     // {{ newBlog (action)
     public Blog newBlog(@Named("Name") String name, @Named("Description") String description) {
-        final Blog blog = newPersistentInstance(Blog.class);
+        final Blog blog = newTransientInstance(Blog.class);
         blog.setName(name);
         blog.setDescription(description);
         persist(blog);
