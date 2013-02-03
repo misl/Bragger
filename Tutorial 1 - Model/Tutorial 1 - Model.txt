@@ -6,7 +6,7 @@ See: http://isis.apache.org/getting-started/quickstart-archetype.html
 mvn archetype:generate  \
     -D archetypeGroupId=org.apache.isis.archetype \
     -D archetypeArtifactId=quickstart_wicket_restful_jdo-archetype \
-    -D archetypeVersion=1.0.1 \
+    -D archetypeVersion=1.0.2 \
     -D groupId=org.apache.isis.tutorial \
     -D artifactId=bragger
 
@@ -15,3 +15,18 @@ mvn archetype:generate  \
 cd bragger
 
 mvn clean install    
+
+added core.isis-core-objectstore
+
+
+mvn archetype:generate  \
+    -D archetypeGroupId=org.apache.isis.archetype \
+    -D archetypeArtifactId=tutorial_quickstart \
+    -D archetypeVersion=1.0.0-SNAPSHOT \
+    -D groupId=org.apache.isis.tutorial \
+    -D artifactId=bragger
+
+    
+mvn archetype:generate -D archetypeGroupId=org.apache.isis.archetype -D archetypeArtifactId=quickstart_wicket_restful_jdo-archetype -D archetypeVersion=1.0.2 -D groupId=org.apache.isis.tutorial -D artifactId=Testimony
+mvn archetype:generate -D archetypeGroupId=org.apache.isis.archetype -D archetypeArtifactId=tutorial_quickstart     -D archetypeVersion=1.0.0-SNAPSHOT     -D groupId=org.apache.isis.tutorial     -D artifactId=bragger
+    

@@ -94,27 +94,15 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>bragger-objstore-jdo</artifactId>
         </dependency>
-        
-        
-        <!-- other isis components -->
-        <dependency>
-            <groupId>org.apache.isis.viewer</groupId>
-            <artifactId>isis-viewer-wicket-impl</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.isis.viewer</groupId>
-            <artifactId>isis-viewer-restfulobjects-impl</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.isis.security</groupId>
-            <artifactId>isis-security-shiro</artifactId>
-        </dependency>
-
 
         <!-- isis core -->
         <dependency>
             <groupId>org.apache.isis.core</groupId>
             <artifactId>isis-core-runtime</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.isis.core</groupId>
+            <artifactId>isis-core-objectstore</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.isis.core</groupId>
@@ -132,7 +120,20 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
-
+                
+        <!-- other isis components -->
+        <dependency>
+            <groupId>org.apache.isis.viewer</groupId>
+            <artifactId>isis-viewer-wicket-impl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.isis.viewer</groupId>
+            <artifactId>isis-viewer-restfulobjects-impl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.isis.security</groupId>
+            <artifactId>isis-security-shiro</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.geronimo.specs</groupId>
