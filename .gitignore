@@ -50,3 +50,5 @@ Desktop.ini
 ############
 
 old/
+# Due to ISIS-227
+target-ide/
